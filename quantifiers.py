@@ -69,5 +69,34 @@ matches = re.findall(pattern, text)
 print(matches)
 
 
+# Ejercicio :
+# Encuentra todas las palabras que tengan de 4 a 6 en el siguiente texto
+
+words="ala casa arbol leon cinco murcielago"
+pattern = r"\b\w{4,6}\b"
+matches = re.findall(pattern, words)
+if matches:
+    print("Se encontró la cadena")
+    print(matches)
+else:
+    print("No se encontró la cadena")
+    
+#Ejercicio:
+#Encuentra todas las palabras que tengan mas de 6 letras en el siguiente texto
+
+words="ala fantastico  casa arbol leon cinco murcielago"
+pattern = r"\b\w{6,}\b"
+matches = re.findall(pattern, words)
+if matches:
+    print("Se encontró la cadena")
+    print(matches)
+else:
+    print("No se encontró la cadena")
+    
+
+
+
+
+
 
 
