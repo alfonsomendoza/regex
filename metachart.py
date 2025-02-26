@@ -156,7 +156,7 @@ print(found)
 
 # |: Operador OR coincide con una de las dos opciones
 
-fruits = "platano, manzana, pera, sandia, melon,aguacate,palta"
+fruits = "platano, manzana, pera, sandia, melon,aguacate,palta,piña"
 pattern = r"palta|aguacate|p..a|\b\w{7}|b"   # Coincide con manzana o pera
 found = re.findall(pattern, fruits)
 print(found)
